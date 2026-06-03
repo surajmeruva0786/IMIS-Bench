@@ -1,0 +1,29 @@
+# ── Converted NIfTI outputs ────────────────────────────────────────────────────
+# Raw CT images are large (1-3 MB each) — regenerate with convert_btcv_to_lesionlocator.py
+nifti_output/BTCV/images/
+nifti_output/BTCV/predictions/
+
+# Keep committed:
+#   nifti_output/BTCV/labels/          (~30 KB each, small segmentation masks)
+#   nifti_output/BTCV/prompts/         (tiny JSON box prompts)
+#   nifti_output/BTCV/conversion_summary.json
+
+# ── Raw dataset large files ─────────────────────────────────────────────────────
+dataset/BTCV/image/
+dataset/BTCV/imask/
+dataset/BTCV/label/
+
+# ── Model weights and archives ──────────────────────────────────────────────────
+*.pth
+*.pt
+*.h5
+*.hdf5
+*.zip
+*.tar
+*.tar.gz
+
+# ── Python / OS ────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
